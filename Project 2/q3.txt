@@ -1,0 +1,5 @@
+  The average running time of Timsort and Quicksort are both O(nlogn); however, the worst-case running time of Timsort is O(nlogn), compare with the worst-case of Quicksort is O(n^2). So Timsort is faster compare with Quicksort. TimSort is a stable sort, unlike Quicksort. 
+  The average running time of Mergesort is O(nlogn), the best-case running time is O(nlogn) compare with the best-case running time of Timsort is O(n), so Timsort is faster than Mergesort.
+  The average running time of insertion sort is O(n^2) compare with the average running time of Timsort is O(nlogn), so Timsort is faster than insertion sort.
+  The average running time of selection sort is O(n^2) compare with the average running time of Timsort is O(nlogn), so Timsort is faster than selection sort. 
+  The disadvantage of Timsort is that the worst-case space complexity is O(n) compare with the worst-case space complexity of Quicksort is O(logn). 

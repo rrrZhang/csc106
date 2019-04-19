@@ -1,0 +1,4 @@
+1.select Ranking, SongTitle, HowManyMinutes, NumberOfAwards from BestSongsEver order by Ranking;
+2.select Ranking, SongTitle, Year, Name, NumberOfMembers,CurrentlyActive from BestSongsEver natural join Artists where CurrentlyActive==1 order by year;
+3.select distinct Language from Languages natural join BestSongsEver natural join Artists where CurrentlyActive==0 order by Language;
+

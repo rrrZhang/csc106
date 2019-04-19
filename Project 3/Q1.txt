@@ -1,0 +1,62 @@
+drop table Artists;
+drop table BestSongsEver;
+drop table Languages;
+
+create table Artists (Name text, NumberOfMembers int, CurrentlyActive int);
+create table BestSongsEver (Name text, SongTitle text, Year int, Ranking int, Genre text, HowManyMinutes int, NumberOfAwards int);
+create table Languages (Ranking int, Language text);
+
+
+
+insert into Artists values('BB Brunes',3,1);
+insert into Artists values('Taylor Swift', 1, 1);
+insert into Artists values('Wakin Chau', 1, 0);
+insert into Artists values('Bruno Mars', 1, 1);
+insert into Artists values('Ed Sheeran', 1, 1);
+
+insert into Artists values('ColdPlay', 4, 1);
+insert into Artists values('Dalida', 1, 0);
+insert into Artists values('Adele', 1, 1);
+insert into Artists values('Justin Bieber', 1, 1);
+insert into Artists values('Teresa Teng', 1, 0);
+
+insert into BestSongsEver values('BB Brunes', 'Coups et Blessures', 2012, 5, 'Rock', 3, 0);
+insert into BestSongsEver values('Taylor Swift', 'You Belong With Me', 2008, 10, 'Pop', 3, 2);
+insert into BestSongsEver values('Wakin Chau', 'Friends', 1997, 6, 'Pop', 4, 2);
+insert into BestSongsEver values('Bruno Mars', 'Just The Way You Are', 2010, 4, 'Pop', 4, 1);
+insert into BestSongsEver values('Ed Sheeran', 'Perfect', 2017, 2, 'Pop', 4, 0);
+
+insert into BestSongsEver values('ColdPlay', 'We Never Change', 2000, 11, 'Britpop', 4, 2);
+insert into BestSongsEver values('Dalida', 'Laissez-Moi Danser', 1979, 8, 'Pop', 3, 1);
+insert into BestSongsEver values('Adele', 'Hello', 2015, 1, 'Pop', 6, 3);
+insert into BestSongsEver values('Justin Bieber', 'Baby', 2010, 13, 'Pop', 3, 2);
+insert into BestSongsEver values('Teresa Teng', 'The Moon Represents My Heart', 1977, 3, 'Pop', 3, 3);
+
+insert into BestSongsEver values('Taylor Swift', 'End Game', 2017, 12, 'Pop', 5, 3);
+insert into BestSongsEver values('Ed Sheeran', 'Shape Of You', 2017, 9, 'Pop', 3, 0);
+insert into BestSongsEver values('Ed Sheeran', 'Photograph', 2014, 15, 'Pop', 3, 0);
+insert into BestSongsEver values('Bruno Mars', '24K Magic', 2016, 14, 'Pop', 3, 0);
+insert into BestSongsEver values('Bruno Mars', 'That Is What I Like', 2016, 7, 'Rock', 3, 1);
+
+insert into Languages values(5,'French');
+insert into Languages values(10,'English');
+insert into Languages values(6,'Chinese');
+insert into Languages values(4,'English');
+insert into Languages values(2,'English');
+insert into Languages values(11,'English');
+insert into Languages values(8,'French');
+insert into Languages values(1,'English');
+insert into Languages values(13,'English');
+insert into Languages values(3,'Chinese');
+insert into Languages values(12,'English');
+insert into Languages values(9,'English');
+insert into Languages values(15,'English');
+insert into Languages values(14,'English');
+insert into Languages values(7,'English');
+
+.mode column
+.header on
+.width 20, 30
+select * from Artists;
+select * from BestSongsEver;
+select * from Languages;
